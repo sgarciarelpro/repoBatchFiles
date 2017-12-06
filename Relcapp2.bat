@@ -18,7 +18,7 @@ IF NOT EXIST "C:\Source\Relcapp2\relcappCorpWebSite2016" (
      echo "Folder 'C:\Source\Relcapp2\relcappCorpWebSite2016' Already Exists"
 )
 echo "completed relcapp2 repos"
-pause
+cd C:\repoBatchFiles
 
 
 

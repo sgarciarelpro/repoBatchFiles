@@ -27,4 +27,4 @@ IF NOT EXIST "c:\Source\Relcapp1\relcapp1Service" (
     echo "Folder 'c:\Source\Relcapp1\relcapp1Service' Already Exists"
 )
 echo "completed Relcapp1 repos"
-pause
+cd C:\repoBatchFiles

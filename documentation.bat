@@ -9,4 +9,4 @@ IF NOT EXIST "C:\Source\Documentation" (
      echo "Folder 'C:\Source\Documentation' Already Exists"
 )
 echo "completed documentation repo"
-pause
+cd C:\repoBatchFiles

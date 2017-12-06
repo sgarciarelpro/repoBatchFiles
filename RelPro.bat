@@ -106,6 +106,7 @@ IF NOT EXIST "C:\Source\RelPro\techStackV2" (
     git init
     git remote add origin "https://github.com/relcapp/techstackV2"
     git pull origin master
+    call npm install
 ) ELSE (
      echo "Folder 'C:\Source\RelPro\techStackV2' Already Exists"
 )
@@ -150,4 +151,4 @@ IF NOT EXIST "C:\Source\RelPro\Tools\TechSearchIndexer" (
      echo "Folder 'C:\Source\RelPro\Tools\TechSearchIndexer' Already Exists"
 )
 echo "completed RelPro repos"
-pause
+cd C:\repoBatchFiles

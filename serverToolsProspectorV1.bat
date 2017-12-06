@@ -9,4 +9,4 @@ IF NOT EXIST "C:\Source\serverToolsProspectorV1" (
 )
 
 echo "completed serverToolsProspectorV1 repos"
-pause
+cd C:\repoBatchFiles
