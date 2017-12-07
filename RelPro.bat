@@ -170,5 +170,14 @@ IF NOT EXIST "C:\Source\RelPro\NetSuiteQA" (
 ) ELSE (
      echo "Folder 'C:\Source\RelPro\NetSuiteQA' Already Exists"
 )
+IF NOT EXIST "C:\Source\RelPro\OrbIntelligenceDB" (
+    MKDIR C:\Source\RelPro\OrbIntelligenceDB
+    cd C:\Source\RelPro\OrbIntelligenceDB
+    git init
+    git remote add origin "https://github.com/relcapp/orbDatabase"
+    git pull origin master
+) ELSE (
+     echo "Folder 'C:\Source\RelPro\OrbIntelligenceDB' Already Exists"
+)
 echo "completed RelPro repos"
 cd C:\repoBatchFiles
