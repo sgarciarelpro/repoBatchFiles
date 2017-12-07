@@ -81,6 +81,24 @@ IF NOT EXIST "C:\Source\RelPro\pdfTemplates" (
 ) ELSE (
      echo "Folder 'C:\Source\RelPro\pdfTemplates' Already Exists"
 )
+IF NOT EXIST "C:\Source\RelPro\SSOX" (
+    MKDIR C:\Source\RelPro\SSOX
+    cd C:\Source\RelPro\SSOX
+    git init
+    git remote add origin "https://github.com/relcapp/ssox"
+    git pull origin master
+) ELSE (
+     echo "Folder 'C:\Source\RelPro\SSOX' Already Exists"
+)
+IF NOT EXIST "C:\Source\RelPro\relproV2" (
+    MKDIR C:\Source\RelPro\relproV2
+    cd C:\Source\RelPro\relproV2
+    git init
+    git remote add origin "https://github.com/relcapp/relproV2"
+    git pull origin master
+) ELSE (
+     echo "Folder 'C:\Source\RelPro\relproV2' Already Exists"
+)
 IF NOT EXIST "C:\Source\RelPro\relproChromePluginV1" (
     MKDIR C:\Source\RelPro\relproChromePluginV1
     cd C:\Source\RelPro\relproChromePluginV1
