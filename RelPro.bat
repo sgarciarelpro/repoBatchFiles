@@ -150,5 +150,25 @@ IF NOT EXIST "C:\Source\RelPro\Tools\TechSearchIndexer" (
 ) ELSE (
      echo "Folder 'C:\Source\RelPro\Tools\TechSearchIndexer' Already Exists"
 )
+IF NOT EXIST "C:\Source\RelPro\QAScripts" (
+    MKDIR C:\Source\RelPro\QAScripts
+    cd C:\Source\RelPro\QAScripts
+    git init
+    git remote add origin "https://github.com/relcapp/QAScripts"
+    git pull origin master
+    call npm install
+) ELSE (
+     echo "Folder 'C:\Source\RelPro\QAScripts' Already Exists"
+)
+IF NOT EXIST "C:\Source\RelPro\NetSuiteQA" (
+    MKDIR C:\Source\RelPro\NetSuiteQA
+    cd C:\Source\RelPro\NetSuiteQA
+    git init
+    git remote add origin "https://github.com/relcapp/NetSuiteQA"
+    git pull origin master
+    call npm install
+) ELSE (
+     echo "Folder 'C:\Source\RelPro\NetSuiteQA' Already Exists"
+)
 echo "completed RelPro repos"
 cd C:\repoBatchFiles
